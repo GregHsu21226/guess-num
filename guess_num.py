@@ -1,11 +1,16 @@
 import random
 
-ans = random.randint(1,100)
+min = input('請輸入最小值: ')
+max = input('請輸入最大值: ')
+min = int(min)
+max = int(max)
+
+ans = random.randint(min, max)
 count = 0
 
 while True:
 	count += 1
-	num = input("猜一個介於1-100的數字:")
+	num = input("猜一個介於最小值與最大值之間數字:")
 	num = int(num)
 	if num == ans:
 		print('終於猜對了!')
